@@ -29,7 +29,8 @@ mvn clean install
                 <artifactId>encrypt-application-yml-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                   <!-- 需要加密的配置文件 --> <applicationYmlFile>${project.build.outputDirectory}/config/application-${profileActive}.yml</applicationYmlFile>
+                    <!-- 需要加密的配置文件 --> 
+		    <applicationYmlFile>${project.build.outputDirectory}/config/application-${profileActive}.yml</applicationYmlFile>
                     <!-- 可以指定密码，也可不指定，会随机生成 -->
                     <password>1234567812345678</password>
                 </configuration>
